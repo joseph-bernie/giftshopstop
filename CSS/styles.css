@@ -1,0 +1,150 @@
+/*CSS*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", serif;
+  font-size: 19px;
+}
+
+.btn {
+  text-transform: none !important;
+}
+
+.navButton {
+  font-size: 1.3em;
+}
+.moveDown {
+  position: relative;
+  border-top: 50px;
+}
+
+.navblue {
+  background-color: #6cbfe9 !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#banner-img {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#about {
+  background-color: #e7e7e7;
+  margin: 80px auto;
+  width: 80%;
+  border: 3px solid #316ed9;
+  padding: 60px 60px 200px 60px;
+  position: center;
+}
+
+#content h1 {
+  margin-left: 25px;
+  font-size: 42px;
+  padding: 0px 0px 0px 0px;
+}
+
+h1 {
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  font-size: 29px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #408bc9;
+}
+
+#content p {
+  margin-left: 1px;
+  padding: 10px 80px 10px 80px;
+  color: #000000;
+}
+
+p {
+  text-indent: 75px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  font-style: normal;
+  padding: 60px 0 39px 0;
+}
+
+#handmade h1 {
+  margin-left: 25px;
+  font-size: 42px;
+  padding: 10px 0px 30px 0px;
+}
+
+#handmade img {
+  margin-left: 0px;
+}
+
+#handmade p {
+  margin-left: 1px;
+  padding: 60px 80px 10px 80px;
+}
+
+#authentic h1 {
+  margin-left: 25px;
+  font-size: 42px;
+  padding: 10px 0px 30px 0px;
+}
+
+#authentic img {
+  margin-left: 0px;
+}
+
+#authentic p {
+  margin-left: 1px;
+  padding: 60px 80px 10px 80px;
+}
+
+#carla h1 {
+  margin-left: 25px;
+  font-size: 42px;
+  padding: 10px 0px 30px 0px;
+}
+
+#contact {
+  background-color: #e7e7e7;
+  margin: 0px auto;
+  width: 80%;
+  border: 3px solid #316ed9;
+  padding: 0px 60px 0px 60px;
+  position: center;
+}
+
+#vendors h1 {
+  margin-left: 25px;
+  font-size: 42px;
+  padding: 30px 0px 10px 0px;
+}
+
+#vendors p {
+  margin-left: 1px;
+  padding: 10px 80px 60px 80px;
+}
+
+#terms p {
+  margin-left: 20px;
+  padding: 10px 80px 20px 100px;
+}
+
+#terms h3 {
+  margin-left: 25px;
+  font-size: 42px;
+  padding: 20px 0px 10px 0px;
+}
+
+#footer {
+  padding: 20px;
+  margin: 20px;
+}

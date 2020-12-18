@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+  }
+}
+@-ms-viewport {
+  width: device-width;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+
+/*form*/
+.wrapper {
+  /*position: absolute;
+	top: 80%;
+	/*transform: translateY(-50%);*/
+  width: 100%;
+  padding: 0 20px;
+}
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(241, 242, 249, 1);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg {
+  width: 48%;
+}
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #a9a9a9;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+.msg textarea {
+  height: 212px;
+}
+::placeholder {
+  color: black !important;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+::-moz-input-placeholder {
+  color: black;
+}
+::-ms-input-placeholder {
+  color: black;
+}
+.btn {
+  background: rgba(206, 238, 242, 1);
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+nav {
+  -webkit-flex-shrink: 2; /*03-19 from 0 */
+  flex-shrink: 2;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+
+@media screen and (max-width: 600px) {
+  /* 640* 768*/
+
+  nav ul {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li ul {
+    width: 40%;
+    z-index: 1;
+  }
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+}
+.msg textarea {
+  height: 212px;
+}
+::-webkit-input-placeholder {
+  color: black;
+}
+::-moz-input-placeholder {
+  color: black;
+}
+::-ms-input-placeholder {
+  color: black;
+}
+/* Form Layout Styles */
+form.contact-form {
+  /*form#survey...displays the survey form as a flexbox*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+form.contact-form > fieldset {
+  /*form#survey*/
+
+  background-color: rgba(241, 242, 249, 1);
+  border-radius: 20px; /*rounded corners*/
+  -webkit-flex: 1 1 300px; /*flex size of fieldset*/
+  flex: 1 1 300px;
+  font-size: 0.85em;
+  padding: 10px;
+  margin: 10px 400px 10px 400px;
+}
+div.formRow {
+  /*div element as flexbox with row orientation*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 7px 0px;
+}
+div.formRow > * {
+  /*objects that are direct children of div.formRow */
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+/* Form Button Styles */
+div#buttons {
+  text-align: center;
+  width: 100%;
+}
+button#btnAlert {
+  /*new sweetAlert*/
+  text-align: center;
+  width: 6%;
+  margin: 0px 440px 0px 677px;
+  height: 40px;
+  font-size: 21px;
+  font-weight: 88;
+}
+input[type="submit"],
+input[type="reset"] {
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 15px;
+}
+
+/* Validation Styles */
+input:focus,
+select:focus,
+textarea:focus {
+  /*color of box*/
+  background-color: rgb(220, 255, 220);
+}
+input#name:focus:valid,
+input#mail:focus:valid {
+  background: rgb(220, 255, 220) url("rb_valid.png") bottom right/contain
+    no-repeat;
+}
+input#name:focus:valid,
+input#mail:focus:valid {
+  background: rgb(220, 255, 220) url("rb_invalid.png") bottom right/contain
+    no-repeat;
+}
+
+/* Footer styles */
+
+/*google fonts*/
+#script h1 {
+  font-family: apple chancery;
+  /*font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif; */
+  font-size: 55px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: rgba(159, 21, 233, 1);
+  padding: 30px 0px 0px 0px;
+  text-shadow: rgb(65, 190, 244) 2px 2px 1px,
+    /*drop shadow*/ rgba(19, 19, 0, 0.1) 5px 5px 25px; /*blur beyond shadow rgb*/
+}
